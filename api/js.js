@@ -21,7 +21,7 @@ async function loadPokemons() {
 }
 function renderPokemons() {
 
-    for (let i = 0; i < pokemons.length; i++) {
+    for (let i = 0; i < pokemons.length; i++) {// alle pokemons in div
         document.getElementById('allPakemons').innerHTML +=
         `<div onclick="openPokemon(${i})"   id="pokekarten-${i}" class="pokekarten">
             <div class="display"><img  id="pokebild-${i}" class="pokebild" ></div>
@@ -31,7 +31,7 @@ function renderPokemons() {
     }
 
 }
-function openPokemon(i) {
+function openPokemon(i) {// gewählte pokemons 
     document.getElementById('allPakemons').innerHTML =
         `
 		<div class ="flex">
